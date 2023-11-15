@@ -3,9 +3,19 @@ export default function Header() {
     <div className="grid grid-cols-4 grid-flow-col">
       <div className="col-span-4 md:col-span-3 bg-slate-200 leading-10 py-5">
         <div className="pr-24">
-          <p className="font-extrabold text-2xl">خانه خودتان:</p>
-          <h1>با خرید خانه نهایت آزادی را احساس کنید</h1>
-          <button class="rounded-none bg-slate-900 text-white px-2">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/023/495/230/original/real-estate-logo-1-free-png.png"
+            alt="real-estate-logo"
+            className="w-36 mx-auto"
+          />
+          <p className="font-extrabold text-3xl my-4">خانه خودتان:</p>
+          <h1 className="font-extrabold text-3xl text-slate-700 my-2">
+            با خرید خانه نهایت آزادی را احساس کنید
+          </h1>
+          <div className="after:content-['-------------------------------------------------------'] before:content-['-------------------------------------------------------']">
+            دیده می شود در
+          </div>
+          <button class="rounded-none bg-indigo-950 text-white px-2 my-2 hover:bg-indigo-900">
             املاک ما را مشاهده کنید
           </button>
         </div>
