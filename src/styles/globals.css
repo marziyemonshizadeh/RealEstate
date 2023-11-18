@@ -15,8 +15,13 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@layer utilities{
+  .btn{
+    @apply rounded-none bg-indigo-950 text-white px-2 my-2 hover:bg-indigo-900
+}
+}
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +29,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
