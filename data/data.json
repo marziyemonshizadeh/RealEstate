@@ -1,0 +1,98 @@
+{
+  "Estates": [
+    {
+      "id": 1,
+      "title": "آپارتمان خانوادگی مدرن ",
+      "img": "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/Minimalist-modern-home-interior-design-with-a-patio.jpeg",
+      "roomCount": 4,
+      "meterage": 250,
+      "price": 2000000
+    },
+    {
+      "id": 2,
+      "title": "خانه فروشی",
+      "img": "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/Minimalist-modern-home-interior-design-with-a-patio.jpeg",
+      "roomCount": 2,
+      "meterage": 98,
+      "price": 3000000
+    },
+    {
+      "id": 3,
+      "title": "خانه اجاره‌ای",
+      "img": "https://images.squarespace-cdn.com/content/v1/5e30b4c769dcbf426b421101/1627923147715-B3RH11DQ5LOYJ4DMNDSS/Bundy+Drive+Brentwood+spacious+modern+open+plan+mansion+interior+design",
+      "roomCount": 1,
+      "meterage": 180,
+      "price": 2500000
+    },
+    {
+      "id": 4,
+      "title": "سوییت",
+      "img": "https://img.freepik.com/premium-photo/real-estate-dream-home_839035-11884.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=ais",
+      "roomCount": 5,
+      "meterage": 210,
+      "price": 500000
+    },
+    {
+      "id": 5,
+      "title": "باغ",
+      "img": "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/Minimalist-modern-home-interior-design-with-a-patio.jpeg",
+      "roomCount": 8,
+      "meterage": 290,
+      "price": 1200000
+    },
+    {
+      "id": 6,
+      "title": "واحد آپارتمان",
+      "img": "https://www.eligasht.com/Blog/wp-content/uploads/2022/08/Coastal-cities-world.jpg",
+      "roomCount": 2,
+      "meterage": 150,
+      "price": 800000
+    }
+  ],
+  "Feature":[
+    {
+      "id":1,
+      "title":" بهترین خانه های لوکس جهان"
+    },
+    {
+      "id":2,
+      "title":"همه خانه ها در مکان های برتر "
+    },
+    {
+      "id":3,
+      "title":"خانه جدید در یک هفته" 
+    },
+    {
+      "id":4,
+      "title":"فقط بهترین خواص"
+    },
+    {
+      "id":5,
+      "title":"پرداخت های ایمن در بعدی"
+    },
+    {
+      "id":6,
+      "title":" 1% مشاوران املاک برتر"
+    }
+  ],
+  "TopOwners":[
+    {
+      "id":1,
+      "name":"آیدا ایلخانی",
+      "img":"https://www.fashionlady.in/wp-content/uploads/2017/08/cate-blanchett.jpg",
+      "estate":"869"
+    },
+    {
+      "id":2,
+      "name":"باران  کریمی",
+      "img":"https://cms.forbesafrica.com/wp-content/uploads/2023/10/instagram-daily-2023-10-01T183433.735.png",
+      "estate":"869"
+    },
+    {
+      "id":3,
+      "name":"پگاه  نورانی",
+      "img":"https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
+      "estate":"869"
+    }
+  ]
+  }
