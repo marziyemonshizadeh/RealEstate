@@ -1,4 +1,13 @@
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
 export default function Header() {
+  const [topOwners, setTopOwners] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:4001/TopOwners")
+      .then((res) => res.json())
+      .then((owners) => setTopOwners(owners));
+  }, []);
   return (
     <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1  grid-flow-cols">
       <div className="xl:col-span-3 md:col-span-2 grid-cols-1  bg-slate-200 leading-10 py-5">
@@ -14,14 +23,14 @@ export default function Header() {
           </h1>
           <div
             className="after:content-['-------------------------------------------------------'] 
-                          before:content-['-------------------------------------------------------']
-                          xl:visible invisible
-                          "
+                       before:content-['-------------------------------------------------------']
+                       xl:visible invisible"
           >
             دیده می شود در
           </div>
-          <button class="rounded-none bg-indigo-950 text-white px-2 my-2 hover:bg-indigo-900">
-            املاک ما را مشاهده کنید
+
+          <button className="btn">
+            <Link href="/home">املاک ما را مشاهده کنید</Link>
           </button>
         </div>
         <div className="flex md:flex-row flex-col justify-center items-center md:gap-24 md:pr-24 xl:visible invisible">
@@ -49,42 +58,24 @@ export default function Header() {
       </div>
       <div className=" xl:col-span-1 md:col-span-1 grid-cols-1 bg-slate-900 text-slate-100 flex flex-col justify-center items-center py-5">
         <p>سه مالک برتر</p>
-        {/* 1 */}
-        <div className="flex justify-center items-center gap-2 my-2">
-          <img
-            src="https://www.lense.fr/wp-content/uploads/2019/09/100k-ai-faces-6.jpg"
-            alt="gentelmen"
-            className="rounded-full max-h-16"
-          />
-          <div className="text-center">
-            <p>مهدی ایلخانی نسب</p>
-            <sub>869 فروش خانه</sub>
-          </div>
-        </div>
-        {/* 1 */}
-        <div className="flex justify-center items-center gap-2 my-2">
-          <img
-            src="https://www.lense.fr/wp-content/uploads/2019/09/100k-ai-faces-6.jpg"
-            alt="gentelmen"
-            className="rounded-full max-h-16"
-          />
-          <div className="text-center">
-            <p>مهدی ایلخانی نسب</p>
-            <sub>869 فروش خانه</sub>
-          </div>
-        </div>
-        {/* 1 */}
-        <div className="flex justify-center items-center gap-2 my-2">
-          <img
-            src="https://www.lense.fr/wp-content/uploads/2019/09/100k-ai-faces-6.jpg"
-            alt="gentelmen"
-            className="rounded-full max-h-16"
-          />
-          <div className="text-center">
-            <p>مهدی ایلخانی نسب</p>
-            <sub>869 فروش خانه</sub>
-          </div>
-        </div>
+        {topOwners.map((items) => {
+          return (
+            <div
+              className="flex justify-center items-center gap-2 my-2"
+              key={items.id}
+            >
+              <img
+                src={items.img}
+                alt={items.id}
+                className="rounded-full max-h-16"
+              />
+              <div className="text-center">
+                <p>{items.name}</p>
+                <sub>{items.estate} فروش خانه</sub>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
