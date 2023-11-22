@@ -29,9 +29,9 @@ export default function Header() {
             دیده می شود در
           </div>
 
-          <button className="btn">
-            <Link href="/home">املاک ما را مشاهده کنید</Link>
-          </button>
+          <Link href="/home" className="btn py-2">
+            املاک ما را مشاهده کنید
+          </Link>
         </div>
         <div className="flex md:flex-row flex-col justify-center items-center md:gap-24 md:pr-24 xl:visible invisible">
           <img
