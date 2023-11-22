@@ -4,8 +4,10 @@ import { useEffect, useState } from "react";
 
 function home() {
   const [estate, setEstate] = useState([]);
-  // const [homes, setHomes] = useState([]);
+  const [sort, setSort] = useState("-1");
+  //نیاز به مقدار پیش فرض دارد const [homes, setHomes] = useState([]);
   const [search, setSearch] = useState("");
+
   useEffect(() => {
     fetch("http://localhost:4001/Estates")
       .then((res) => res.json())
@@ -16,6 +18,29 @@ function home() {
     setEstate(newHomes);
   }, [search]);
 
+  useEffect(() => {
+    switch (sort) {
+      case "price": {
+        const newHomes = [...estate].sort((a, b) => a.price - b.price);
+        setEstate(newHomes);
+        break;
+      }
+      case "room": {
+        const newHomes = [...estate].sort((a, b) => a.roomCount - b.roomCount);
+        setEstate(newHomes);
+        break;
+      }
+      case "meterage": {
+        const newHomes = [...estate].sort((a, b) => a.meterage - b.meterage);
+        setEstate(newHomes);
+        break;
+      }
+      default: {
+        // do not work
+        setEstate([...estate]);
+      }
+    }
+  }, [sort]);
   return (
     <>
       {console.log("search", search)}
@@ -26,14 +51,13 @@ function home() {
           name=""
           id=""
           className="focus:outline-blue-800 border shadow m-4"
+          defaultValue={sort}
+          onChange={(e) => setSort(e.target.value)}
         >
-          <option value="" defaultValue>
-            انتخاب کنید
-          </option>
-          <option value="">بر اساس قیمت</option>
-          <option value="">بر اساس تعداد اتاق</option>
-          <option value="">بر اساس ادرس</option>
-          <option value="">بر اساس اندازه</option>
+          <option value="-1">انتخاب کنید</option>
+          <option value="price">بر اساس قیمت</option>
+          <option value="room">بر اساس تعداد اتاق</option>
+          <option value="meterage">بر اساس اندازه</option>
         </select>
         <div className="flex justify-center m-4">
           <input
