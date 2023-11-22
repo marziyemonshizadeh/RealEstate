@@ -4,24 +4,35 @@ import { useEffect, useState } from "react";
 
 function home() {
   const [estate, setEstate] = useState([]);
+  // copy
+  const [homes, setHomes] = useState([]);
+
   const [sort, setSort] = useState("-1");
+  const [activePage, setActivePage] = useState(1);
   //نیاز به مقدار پیش فرض دارد const [homes, setHomes] = useState([]);
   const [search, setSearch] = useState("");
+  const pageItem = 3;
 
+  //  fetching data
   useEffect(() => {
     fetch("http://localhost:4001/Estates")
       .then((res) => res.json())
-      .then((estate) => setEstate(estate));
+      .then((estate) => {
+        setEstate(estate);
+        setHomes(estate);
+      });
+    setHomes[estate];
   }, []);
+  // search data
   useEffect(() => {
-    const newHomes = estate.filter((home) => home.title.includes(search));
+    const newHomes = homes.filter((home) => home.title.includes(search));
     setEstate(newHomes);
   }, [search]);
 
   useEffect(() => {
     switch (sort) {
       case "price": {
-        const newHomes = [...estate].sort((a, b) => a.price - b.price);
+        const newHomes = [...homes].sort((a, b) => a.price - b.price);
         setEstate(newHomes);
         break;
       }
@@ -41,10 +52,24 @@ function home() {
       }
     }
   }, [sort]);
+
+  const paginateHandler = (event, page) => {
+    event.preventDefault();
+    console.log("Next Page =>", page);
+    setActivePage(page);
+    // paginated
+    const endIndex = pageItem * page;
+    const startIndex = endIndex - pageItem;
+
+    const paginatedHomes = estate.slice(startIndex, endIndex);
+    setHomes(paginatedHomes);
+  };
+  console.log("activepage", activePage);
   return (
     <>
       {console.log("search", search)}
       {console.log("estate", estate)}
+      {console.log("homes", homes)}
       {/* {console.log("homes", homes)} */}
       <div className="flex justify-center">
         <select
@@ -68,58 +93,33 @@ function home() {
             onChange={(e) => setSearch(e.target.value)}
             placeholder="عنوان خانه مورد نظر را وارد کنید"
           />
-          <Link
-            href="#"
-            className="bg-indigo-950 text-slate-50 text-center py-2 px-3 hover:bg-indigo-900"
-          >
-            جستجو
-          </Link>
         </div>
       </div>
       {estate.length > 0 ? (
         <>
           {/* املاک */}
           <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 place-items-center gap-y-8 my-16">
-            {estate.map((estate) => {
+            {homes.slice(0, pageItem).map((estate) => {
               return <Estate key={estate.id} {...estate} />;
             })}
           </div>
           {/* pagination */}
-          <div className="flex flex-row-reverse justify-center gap-x-3 my-6">
-            <div className="paginationBtn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
-              </svg>
-            </div>
-            <div className="paginationBtn">1</div>
-            <div className="paginationBtn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </div>
-          </div>
+          <ul className="flex flex-row-reverse justify-center gap-x-3 my-6">
+            {Array.from({ length: Math.ceil(estate.length / pageItem) }).map(
+              (item, index) => (
+                <Link
+                  href="#"
+                  key={index + 1}
+                  className={`rounded-full bg-violet-950 text-slate-50 w-10 text-center h-10 p-2 hover:bg-indigo-900 ${
+                    activePage == index + 1 ? " bg-slate-300" : ""
+                  }`}
+                  onClick={(event) => paginateHandler(event, index + 1)}
+                >
+                  <div className="">{index + 1}</div>
+                </Link>
+              )
+            )}
+          </ul>
         </>
       ) : (
         <div className="flex justify-center mx-auto h-screen my-14">
