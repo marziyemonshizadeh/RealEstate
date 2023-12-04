@@ -13,7 +13,7 @@ export default function aboutUs({ data }) {
       {/* خدمات ما */}
       <OurServices OurServices={data.OurServices} />
       {/* راه های ارتباطی */}
-      <Information />
+      <Information data={data.aboutUs} />
     </>
   );
 }
@@ -21,10 +21,14 @@ export async function getStaticProps() {
   const OurServicesResponse = await fetch("http://localhost:4001/OurServices");
   const OurServicesData = await OurServicesResponse.json();
 
+  const aboutUsResponse = await fetch("http://localhost:4001/aboutUs");
+  const aboutUsData = await aboutUsResponse.json();
+
   return {
     props: {
       data: {
         OurServices: OurServicesData,
+        aboutUs: aboutUsData,
       },
     },
   };
