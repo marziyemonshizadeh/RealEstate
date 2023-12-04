@@ -16,7 +16,7 @@ export default function Estate({ id, img, title, roomCount, meterage, price }) {
           <p>مالدیو</p>
           <p>{roomCount} اتاق</p>
           <p>{meterage} متر مربع</p>
-          <p>{price} میلیون تومان</p>
+          <p>{price.toLocaleString()} میلیون تومان</p>
         </div>
         <Link href={`/home/${id}`} className="btn py-2">
           املاک ما را مشاهده کنید
