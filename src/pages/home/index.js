@@ -1,10 +1,11 @@
-import Estate from "@/components/estate/estate";
+import Estate from "@/components/modules/estate/estate";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function home() {
+  //all estates
   const [estate, setEstate] = useState([]);
-  // copy
+  // copy estates
   const [homes, setHomes] = useState([]);
 
   const [sort, setSort] = useState("-1");
@@ -25,30 +26,30 @@ function home() {
   }, []);
   // search data
   useEffect(() => {
-    const newHomes = homes.filter((home) => home.title.includes(search));
-    setEstate(newHomes);
+    const newHomes = estate.filter((home) => home.title.includes(search));
+    setHomes(newHomes);
   }, [search]);
 
   useEffect(() => {
     switch (sort) {
       case "price": {
         const newHomes = [...homes].sort((a, b) => a.price - b.price);
-        setEstate(newHomes);
+        setHomes(newHomes);
         break;
       }
       case "room": {
-        const newHomes = [...estate].sort((a, b) => a.roomCount - b.roomCount);
-        setEstate(newHomes);
+        const newHomes = [...homes].sort((a, b) => a.roomCount - b.roomCount);
+        setHomes(newHomes);
         break;
       }
       case "meterage": {
-        const newHomes = [...estate].sort((a, b) => a.meterage - b.meterage);
-        setEstate(newHomes);
+        const newHomes = [...homes].sort((a, b) => a.meterage - b.meterage);
+        setHomes(newHomes);
         break;
       }
       default: {
         // do not work
-        setEstate([...estate]);
+        setHomes([...homes]);
       }
     }
   }, [sort]);
@@ -67,9 +68,9 @@ function home() {
   console.log("activepage", activePage);
   return (
     <>
-      {console.log("search", search)}
+      {/* {console.log("search", search)}
       {console.log("estate", estate)}
-      {console.log("homes", homes)}
+      {console.log("homes", homes)} */}
       {/* {console.log("homes", homes)} */}
       <div className="flex justify-center">
         <select

@@ -15,7 +15,7 @@ export default function Footer() {
         ملک خود راارسال کنید
       </Link>
       <Link href="/aboutUs" className="hover:text-indigo-400">
-        باماکارکنید
+        درباره ی ما
       </Link>
     </div>
   );

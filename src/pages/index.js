@@ -1,7 +1,7 @@
-import TheBestDecision from "@/components/TheBestDecision/TheBestDecision";
-import Estate from "@/components/estate/estate";
-import Feature from "@/components/feature/feature";
-import Gallery from "@/components/gallery/gallery";
+import Estate from "@/components/modules/estate/estate";
+import Feature from "@/components/modules/feature/feature";
+import TheBestDecision from "@/components/templates/index/TheBestDecision/TheBestDecision";
+import Gallery from "@/components/templates/index/gallery/gallery";
 import { useEffect, useState } from "react";
 
 function index() {
@@ -20,7 +20,11 @@ function index() {
       {/* ویژگی ها */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 my-16 mx-4">
         {feature.map((feature) => {
-          return <Feature key={feature.id} {...feature} />;
+          return (
+            <Feature key={feature.id} {...feature}>
+              {feature.description}
+            </Feature>
+          );
         })}
       </div>
       {/* تعریف :) */}

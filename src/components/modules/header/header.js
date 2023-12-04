@@ -21,16 +21,16 @@ export default function Header() {
           <h1 className="font-extrabold text-3xl text-slate-700 my-2">
             با خرید خانه نهایت آزادی را احساس کنید
           </h1>
-          <div
+          {/* <div
             className="after:content-['-------------------------------------------------------'] 
                        before:content-['-------------------------------------------------------']
                        xl:visible invisible"
           >
             دیده می شود در
-          </div>
+          </div> */}
 
           <Link href="/home" className="btn py-2">
-            املاک ما را مشاهده کنید
+            تمامی املاک ما را مشاهده کنید
           </Link>
         </div>
         <div className="flex md:flex-row flex-col justify-center items-center md:gap-24 md:pr-24 xl:visible invisible">

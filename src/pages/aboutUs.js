@@ -1,4 +1,4 @@
-import Information from "@/components/information/information";
+import Information from "@/components/modules/information/information";
 
 // import "@/styles/aboutUs.module.css";
 export default function aboutUs() {

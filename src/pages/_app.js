@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
-import Footer from "../components/footer/footer";
-import Header from "../components/header/header";
-import Sidebar from "../components/sidebar/sidebar";
+import Footer from "../components/modules/footer/footer";
+import Header from "../components/modules/header/header";
+import Sidebar from "../components/modules/sidebar/sidebar";
 
 export default function App({ Component, pageProps }) {
   return (

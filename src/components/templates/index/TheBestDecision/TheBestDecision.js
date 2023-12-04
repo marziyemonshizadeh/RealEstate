@@ -10,7 +10,7 @@ export default function TheBestDecision() {
         طراحی گرافیکی و یا صنعت چاپ استفاده میشود. طراحان وب و گرافیک از این متن
         برای پرکردن
       </p>
-      <button className="btn py-1.5">املاک ما را مشاهده کنید</button>
+      <button className="btn py-1">املاک ما را مشاهده کنید</button>
     </div>
   );
 }
