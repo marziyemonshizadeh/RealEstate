@@ -7,11 +7,9 @@
       "roomCount": 4,
       "meterage": 250,
       "price": 250000000000,
-      "address":"تهران ، قیطریه",
-      "phoneNumber":"09121234567",
-      "Seller":"دیوار"
-
-
+      "address": "تهران ، قیطریه",
+      "phoneNumber": "09121234567",
+      "Seller": "دیوار"
     },
     {
       "id": 2,
@@ -20,9 +18,9 @@
       "roomCount": 2,
       "meterage": 98,
       "price": 3000000,
-      "address":"تهران ، ولنجک",
-      "phoneNumber":"09128888888",
-      "Seller":"دیوار"
+      "address": "تهران ، ولنجک",
+      "phoneNumber": "09128888888",
+      "Seller": "دیوار"
     },
     {
       "id": 3,
@@ -31,9 +29,9 @@
       "roomCount": 1,
       "meterage": 180,
       "price": 2500000,
-      "address":"تهران ، قیطریه",
-      "phoneNumber":"09121234567",
-      "Seller":"دیوار"
+      "address": "تهران ، قیطریه",
+      "phoneNumber": "09121234567",
+      "Seller": "دیوار"
     },
     {
       "id": 4,
@@ -42,9 +40,9 @@
       "roomCount": 5,
       "meterage": 210,
       "price": 500000,
-      "address":"تهران ، قیطریه",
-      "phoneNumber":"09121234567",
-      "Seller":"دیوار"
+      "address": "تهران ، قیطریه",
+      "phoneNumber": "09121234567",
+      "Seller": "دیوار"
     },
     {
       "id": 5,
@@ -53,9 +51,9 @@
       "roomCount": 8,
       "meterage": 290,
       "price": 1200000,
-      "address":"تهران ، قیطریه",
-      "phoneNumber":"09121234567",
-      "Seller":"دیوار"
+      "address": "تهران ، قیطریه",
+      "phoneNumber": "09121234567",
+      "Seller": "دیوار"
     },
     {
       "id": 6,
@@ -64,9 +62,9 @@
       "roomCount": 2,
       "meterage": 150,
       "price": 800000,
-      "address":"تهران ، قیطریه",
-      "phoneNumber":"09121234567",
-      "Seller":"دیوار"
+      "address": "تهران ، قیطریه",
+      "phoneNumber": "09121234567",
+      "Seller": "دیوار"
     },
     {
       "id": 7,
@@ -75,9 +73,9 @@
       "roomCount": 2,
       "meterage": 150,
       "price": 800000,
-      "address":"تهران ، قیطریه",
-      "phoneNumber":"09121234567",
-      "Seller":"دیوار"
+      "address": "تهران ، قیطریه",
+      "phoneNumber": "09121234567",
+      "Seller": "دیوار"
     },
     {
       "id": 8,
@@ -86,9 +84,9 @@
       "roomCount": 2,
       "meterage": 150,
       "price": 800000,
-      "address":"تهران ، قیطریه",
-      "phoneNumber":"09121234567",
-      "Seller":"دیوار"
+      "address": "تهران ، قیطریه",
+      "phoneNumber": "09121234567",
+      "Seller": "دیوار"
     },
     {
       "id": 9,
@@ -97,168 +95,226 @@
       "roomCount": 2,
       "meterage": 150,
       "price": 800000,
-      "address":"تهران ، قیطریه",
-      "phoneNumber":"09121234567",
-      "Seller":"دیوار"
+      "address": "تهران ، قیطریه",
+      "phoneNumber": "09121234567",
+      "Seller": "دیوار"
     }
   ],
-  "Feature":[
+  "Feature": [
     {
-      "id":1,
-      "title":" بهترین خانه های لوکس جهان",
-      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
+      "id": 1,
+      "title": " بهترین خانه های لوکس جهان",
+      "description": "سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
-      "id":2,
-      "title":"همه خانه ها در مکان های برتر ",
-      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
+      "id": 2,
+      "title": "همه خانه ها در مکان های برتر ",
+      "description": "سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
-      "id":3,
-      "title":"خانه جدید در یک هفته" ,
-      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
+      "id": 3,
+      "title": "خانه جدید در یک هفته",
+      "description": "سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
-      "id":4,
-      "title":"فقط بهترین خواص",
-      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
+      "id": 4,
+      "title": "فقط بهترین خواص",
+      "description": "سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
-      "id":5,
-      "title":"پرداخت های ایمن در بعدی",
-      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
+      "id": 5,
+      "title": "پرداخت های ایمن در بعدی",
+      "description": "سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
-      "id":6,
-      "title":" 1% مشاوران املاک برتر",
-      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
+      "id": 6,
+      "title": " 1% مشاوران املاک برتر",
+      "description": "سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     }
   ],
-  "TopOwners":[
+  "TopOwners": [
     {
-      "id":1,
-      "name":"آیدا ایلخانی",
-      "img":"https://www.fashionlady.in/wp-content/uploads/2017/08/cate-blanchett.jpg",
-      "estate":"605"
+      "id": 1,
+      "name": "آیدا ایلخانی",
+      "img": "https://www.fashionlady.in/wp-content/uploads/2017/08/cate-blanchett.jpg",
+      "estate": "605"
     },
     {
-      "id":2,
-      "name":"باران  کریمی",
-      "img":"https://cms.forbesafrica.com/wp-content/uploads/2023/10/instagram-daily-2023-10-01T183433.735.png",
-      "estate":"1024"
+      "id": 2,
+      "name": "باران  کریمی",
+      "img": "https://cms.forbesafrica.com/wp-content/uploads/2023/10/instagram-daily-2023-10-01T183433.735.png",
+      "estate": "1024"
     },
     {
-      "id":3,
-      "name":"پگاه  نورانی",
-      "img":"https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
-      "estate":"530"
+      "id": 3,
+      "name": "پگاه  نورانی",
+      "img": "https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
+      "estate": "530"
     }
   ],
-  "Features":[
+  "Features": [
     {
-      "id":1,
-      "header":"امکان معرفی مشاورهای دفتر"
+      "id": 1,
+      "header": "امکان معرفی مشاورهای دفتر"
     },
     {
-      "id":2,
-      "header":"امکان درج آدرس سایت"
+      "id": 2,
+      "header": "امکان درج آدرس سایت"
     },
     {
-      "id":3,
-      "header":"امکان درج شبکه‌های اجتماعی"
+      "id": 3,
+      "header": "امکان درج شبکه‌های اجتماعی"
     },
     {
-      "id":4,
-      "header":"امکان درج بیوگرافی و معرفی دفتر"
+      "id": 4,
+      "header": "امکان درج بیوگرافی و معرفی دفتر"
     },
     {
-      "id":5,
-      "header":"امکان جستجو در بین آگهی‌های شما"
+      "id": 5,
+      "header": "امکان جستجو در بین آگهی‌های شما"
     },
     {
-      "id":6,
-      "header":"امکان ثبت و سپردن آگهی توسط کاربران"
+      "id": 6,
+      "header": "امکان ثبت و سپردن آگهی توسط کاربران"
     }
   ],
-  "aboutUs":[
+  "aboutUs": [
     {
-      "id":1,
-      "info":" تهران - فلکه دوم صادقیه -روبروی بانک تجارت",
-      "title":"آدرس"
-      },{
-        "id":2,
-        "info":"marziehmonshizadeh@yahoo.com",
-        "title":"ایمیل"
-      },
-      {
-        "id":3,
-        "info":"02144444444",
-        "title":"شماره تماس"
-
+      "id": 1,
+      "info": " تهران - فلکه دوم صادقیه -روبروی بانک تجارت",
+      "title": "آدرس"
+    },
+    {
+      "id": 2,
+      "info": "marziehmonshizadeh@yahoo.com",
+      "title": "ایمیل"
+    },
+    {
+      "id": 3,
+      "info": "02144444444",
+      "title": "شماره تماس"
     }
   ],
-  "OurServices":[
-     {
-      "id":1,
+  "OurServices": [
+    {
+      "id": 1,
       "title": "ساخت ویلا",
-      "icon":""
-     },
-     {
-      "id":2,
+      "icon": ""
+    },
+    {
+      "id": 2,
       "title": "بازساری خانه",
-      "icon":""
-     },
-     {
-      "id":3,
+      "icon": ""
+    },
+    {
+      "id": 3,
       "title": "دکوراسیون داخلی",
-      "icon":""
-     },
-     {
-      "id":4,
+      "icon": ""
+    },
+    {
+      "id": 4,
       "title": "محوطه سازی",
-      "icon":""
-     }
+      "icon": ""
+    }
   ],
-  "gallery":[
+  "gallery": [
+    {
+      "id": 1,
+      "img": "https://baamarc.com/fa/wp-content/uploads/2022/08/17-1-1030x687.jpg",
+      "type": "villa"
+    },
+    {
+      "id": 2,
+      "img": "https://www.beautyhome.ir/wp-content/uploads/2017/08/Interior-decoration-of-the-lacquer-villa.jpg",
+      "type": "villa"
+    },
+    {
+      "id": 3,
+      "img": "https://img.vistarooms.com/gallery/vista-sadh-villa-c227d4.jpg",
+      "type": "villa"
+    },
+    {
+      "id": 4,
+      "img": "https://media-feed.resales-online.com/live/ShowImage.asp?SecId=uukkalyteqrukys&Id=P10&ImgId=X1001245&z=1531404115",
+      "type": "villa"
+    },
+    {
+      "id": 5,
+      "img": "https://www.diviana.in/wp-content/uploads/2022/01/diviana-Luxury-Apartment-Preet-Vihar-Delhi-featured.jpg",
+      "type": "apartment"
+    },
+    {
+      "id": 6,
+      "img": "https://88designbox.com/upload/2016/10/07/luxury-modern-apartment-03.jpg",
+      "type": "apartment"
+    },
+    {
+      "id": 7,
+      "img": "https://www.galliardhomes.com/sites/default/files/images/properties/rV5T4chRaSJ/uQE2bVbW1iP.jpg",
+      "type": "apartment"
+    },
+    {
+      "id": 8,
+      "img": "https://media.cntraveler.com/photos/64f9f09c2b5c38e7dea0c48c/master/pass/MFA--Florence-lede.jpg",
+      "type": "apartment"
+    }
+  ],
+  "comments":[
     {
       "id":1,
-      "img":"https://baamarc.com/fa/wp-content/uploads/2022/08/17-1-1030x687.jpg",
-      "type":"villa"
+      "img":"https://www.fashionlady.in/wp-content/uploads/2017/08/cate-blanchett.jpg",
+      "userName":"Marzieh",
+      "comment":"❤️بهترین خانه ای که تابحال اجاره کردم",
+      "type":"ejare"
     },
     {
       "id":2,
-      "img":"https://www.beautyhome.ir/wp-content/uploads/2017/08/Interior-decoration-of-the-lacquer-villa.jpg",
-      "type":"villa"
+      "img":"https://cms.forbesafrica.com/wp-content/uploads/2023/10/instagram-daily-2023-10-01T183433.735.png",
+      "userName":"pegah",
+      "comment":"بهترین سایت املاکی ایران❤️",
+      "type":"ejare"
     },
     {
       "id":3,
-      "img":"https://img.vistarooms.com/gallery/vista-sadh-villa-c227d4.jpg",
-      "type":"villa"
+      "img":"https://cms.forbesafrica.com/wp-content/uploads/2023/10/instagram-daily-2023-10-01T183433.735.png",
+      "userName":"mohamad",
+       "comment":"عالی بود واقعا ممنون",
+      "type":"ejare"
     },
     {
       "id":4,
-      "img":"https://media-feed.resales-online.com/live/ShowImage.asp?SecId=uukkalyteqrukys&Id=P10&ImgId=X1001245&z=1531404115",
-      "type":"villa"
+      "img":"https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
+      "userName":"ali",
+       "comment":"👌🌹مشاوره سایت فوق العاده بود توصیه می کنم حتما ازش استفاده کنید",
+      "type":"ejare"
     },
     {
       "id":5,
-      "img":"https://www.diviana.in/wp-content/uploads/2022/01/diviana-Luxury-Apartment-Preet-Vihar-Delhi-featured.jpg",
-      "type":"apartment"
+      "img":"https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
+      "userName":"ali",
+       "comment":"👌مشاوره سایت فوق العاده بود توصیه می کنم حتما ازش استفاده کنید",
+      "type":"kharid"
     },
     {
       "id":6,
-      "img":"https://88designbox.com/upload/2016/10/07/luxury-modern-apartment-03.jpg",
-      "type":"apartment"
+      "img":"https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
+      "userName":"ali",
+       "comment":" از خریدم خیلی راضی هستم واقعا با قیمت پایین خریداری کردم 👍",
+      "type":"kharid"
     },
     {
       "id":7,
-      "img":"https://www.galliardhomes.com/sites/default/files/images/properties/rV5T4chRaSJ/uQE2bVbW1iP.jpg",
-      "type":"apartment"
+      "img":"https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
+      "userName":"ali",
+       "comment":" ممنون از سایت فوق العادتون  ✌️❤️",
+      "type":"kharid"
     },
     {
       "id":8,
-      "img":"https://media.cntraveler.com/photos/64f9f09c2b5c38e7dea0c48c/master/pass/MFA--Florence-lede.jpg",
-      "type":"apartment"
+      "img":"https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
+      "userName":"ali",
+       "comment":" مشاوره و پیگیری سایت عالی بود  ⭐⭐⭐⭐⭐",
+      "type":"kharid"
     }
   ]
-  }
+}
