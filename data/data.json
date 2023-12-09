@@ -6,7 +6,12 @@
       "img": "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/Minimalist-modern-home-interior-design-with-a-patio.jpeg",
       "roomCount": 4,
       "meterage": 250,
-      "price": 2000000
+      "price": 250000000000,
+      "address":"تهران ، قیطریه",
+      "phoneNumber":"09121234567",
+      "Seller":"دیوار"
+
+
     },
     {
       "id": 2,
@@ -14,7 +19,10 @@
       "img": "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/Minimalist-modern-home-interior-design-with-a-patio.jpeg",
       "roomCount": 2,
       "meterage": 98,
-      "price": 3000000
+      "price": 3000000,
+      "address":"تهران ، ولنجک",
+      "phoneNumber":"09128888888",
+      "Seller":"دیوار"
     },
     {
       "id": 3,
@@ -22,7 +30,10 @@
       "img": "https://images.squarespace-cdn.com/content/v1/5e30b4c769dcbf426b421101/1627923147715-B3RH11DQ5LOYJ4DMNDSS/Bundy+Drive+Brentwood+spacious+modern+open+plan+mansion+interior+design",
       "roomCount": 1,
       "meterage": 180,
-      "price": 2500000
+      "price": 2500000,
+      "address":"تهران ، قیطریه",
+      "phoneNumber":"09121234567",
+      "Seller":"دیوار"
     },
     {
       "id": 4,
@@ -30,7 +41,10 @@
       "img": "https://img.freepik.com/premium-photo/real-estate-dream-home_839035-11884.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=ais",
       "roomCount": 5,
       "meterage": 210,
-      "price": 500000
+      "price": 500000,
+      "address":"تهران ، قیطریه",
+      "phoneNumber":"09121234567",
+      "Seller":"دیوار"
     },
     {
       "id": 5,
@@ -38,7 +52,10 @@
       "img": "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/Minimalist-modern-home-interior-design-with-a-patio.jpeg",
       "roomCount": 8,
       "meterage": 290,
-      "price": 1200000
+      "price": 1200000,
+      "address":"تهران ، قیطریه",
+      "phoneNumber":"09121234567",
+      "Seller":"دیوار"
     },
     {
       "id": 6,
@@ -46,33 +63,75 @@
       "img": "https://www.eligasht.com/Blog/wp-content/uploads/2022/08/Coastal-cities-world.jpg",
       "roomCount": 2,
       "meterage": 150,
-      "price": 800000
+      "price": 800000,
+      "address":"تهران ، قیطریه",
+      "phoneNumber":"09121234567",
+      "Seller":"دیوار"
+    },
+    {
+      "id": 7,
+      "title": "واحد آپارتمان",
+      "img": "https://www.eligasht.com/Blog/wp-content/uploads/2022/08/Coastal-cities-world.jpg",
+      "roomCount": 2,
+      "meterage": 150,
+      "price": 800000,
+      "address":"تهران ، قیطریه",
+      "phoneNumber":"09121234567",
+      "Seller":"دیوار"
+    },
+    {
+      "id": 8,
+      "title": "واحد آپارتمان",
+      "img": "https://www.eligasht.com/Blog/wp-content/uploads/2022/08/Coastal-cities-world.jpg",
+      "roomCount": 2,
+      "meterage": 150,
+      "price": 800000,
+      "address":"تهران ، قیطریه",
+      "phoneNumber":"09121234567",
+      "Seller":"دیوار"
+    },
+    {
+      "id": 9,
+      "title": "واحد آپارتمان",
+      "img": "https://www.eligasht.com/Blog/wp-content/uploads/2022/08/Coastal-cities-world.jpg",
+      "roomCount": 2,
+      "meterage": 150,
+      "price": 800000,
+      "address":"تهران ، قیطریه",
+      "phoneNumber":"09121234567",
+      "Seller":"دیوار"
     }
   ],
   "Feature":[
     {
       "id":1,
-      "title":" بهترین خانه های لوکس جهان"
+      "title":" بهترین خانه های لوکس جهان",
+      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
       "id":2,
-      "title":"همه خانه ها در مکان های برتر "
+      "title":"همه خانه ها در مکان های برتر ",
+      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
       "id":3,
-      "title":"خانه جدید در یک هفته" 
+      "title":"خانه جدید در یک هفته" ,
+      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
       "id":4,
-      "title":"فقط بهترین خواص"
+      "title":"فقط بهترین خواص",
+      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
       "id":5,
-      "title":"پرداخت های ایمن در بعدی"
+      "title":"پرداخت های ایمن در بعدی",
+      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     },
     {
       "id":6,
-      "title":" 1% مشاوران املاک برتر"
+      "title":" 1% مشاوران املاک برتر",
+      "description":"سلام سلام سلام سلام ای زندگی سلام ای زندگی سلام"
     }
   ],
   "TopOwners":[
@@ -80,19 +139,126 @@
       "id":1,
       "name":"آیدا ایلخانی",
       "img":"https://www.fashionlady.in/wp-content/uploads/2017/08/cate-blanchett.jpg",
-      "estate":"869"
+      "estate":"605"
     },
     {
       "id":2,
       "name":"باران  کریمی",
       "img":"https://cms.forbesafrica.com/wp-content/uploads/2023/10/instagram-daily-2023-10-01T183433.735.png",
-      "estate":"869"
+      "estate":"1024"
     },
     {
       "id":3,
       "name":"پگاه  نورانی",
       "img":"https://imageio.forbes.com/blogs-images/ninaroberts/files/2018/01/photo-1.jpg?height=660&width=660&fit=bounds",
-      "estate":"869"
+      "estate":"530"
+    }
+  ],
+  "Features":[
+    {
+      "id":1,
+      "header":"امکان معرفی مشاورهای دفتر"
+    },
+    {
+      "id":2,
+      "header":"امکان درج آدرس سایت"
+    },
+    {
+      "id":3,
+      "header":"امکان درج شبکه‌های اجتماعی"
+    },
+    {
+      "id":4,
+      "header":"امکان درج بیوگرافی و معرفی دفتر"
+    },
+    {
+      "id":5,
+      "header":"امکان جستجو در بین آگهی‌های شما"
+    },
+    {
+      "id":6,
+      "header":"امکان ثبت و سپردن آگهی توسط کاربران"
+    }
+  ],
+  "aboutUs":[
+    {
+      "id":1,
+      "info":" تهران - فلکه دوم صادقیه -روبروی بانک تجارت",
+      "title":"آدرس"
+      },{
+        "id":2,
+        "info":"marziehmonshizadeh@yahoo.com",
+        "title":"ایمیل"
+      },
+      {
+        "id":3,
+        "info":"02144444444",
+        "title":"شماره تماس"
+
+    }
+  ],
+  "OurServices":[
+     {
+      "id":1,
+      "title": "ساخت ویلا",
+      "icon":""
+     },
+     {
+      "id":2,
+      "title": "بازساری خانه",
+      "icon":""
+     },
+     {
+      "id":3,
+      "title": "دکوراسیون داخلی",
+      "icon":""
+     },
+     {
+      "id":4,
+      "title": "محوطه سازی",
+      "icon":""
+     }
+  ],
+  "gallery":[
+    {
+      "id":1,
+      "img":"https://baamarc.com/fa/wp-content/uploads/2022/08/17-1-1030x687.jpg",
+      "type":"villa"
+    },
+    {
+      "id":2,
+      "img":"https://www.beautyhome.ir/wp-content/uploads/2017/08/Interior-decoration-of-the-lacquer-villa.jpg",
+      "type":"villa"
+    },
+    {
+      "id":3,
+      "img":"https://img.vistarooms.com/gallery/vista-sadh-villa-c227d4.jpg",
+      "type":"villa"
+    },
+    {
+      "id":4,
+      "img":"https://media-feed.resales-online.com/live/ShowImage.asp?SecId=uukkalyteqrukys&Id=P10&ImgId=X1001245&z=1531404115",
+      "type":"villa"
+    },
+    {
+      "id":5,
+      "img":"https://www.diviana.in/wp-content/uploads/2022/01/diviana-Luxury-Apartment-Preet-Vihar-Delhi-featured.jpg",
+      "type":"apartment"
+    },
+    {
+      "id":6,
+      "img":"https://88designbox.com/upload/2016/10/07/luxury-modern-apartment-03.jpg",
+      "type":"apartment"
+    },
+    {
+      "id":7,
+      "img":"https://www.galliardhomes.com/sites/default/files/images/properties/rV5T4chRaSJ/uQE2bVbW1iP.jpg",
+      "type":"apartment"
+    },
+    {
+      "id":8,
+      "img":"https://media.cntraveler.com/photos/64f9f09c2b5c38e7dea0c48c/master/pass/MFA--Florence-lede.jpg",
+      "type":"apartment"
     }
   ]
   }
