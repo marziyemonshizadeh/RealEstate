@@ -6,9 +6,13 @@ export default function Footer() {
       <Link href="/home" className="hover:text-indigo-400">
         خانه رویای خودراپیداکنید
       </Link>
-      <p className="hover:text-indigo-400">درخواست پروپوزال</p>
-      <p className="hover:text-indigo-400">برنامه اجاره خانه</p>
-      <Link href="/conectMe" className="hover:text-indigo-400">
+      <Link href="/gallery" className="hover:text-indigo-400">
+        گالری
+      </Link>
+      <Link href="/features" className="hover:text-indigo-400">
+        ویژگی ها
+      </Link>
+      <Link href="/connectMe" className="hover:text-indigo-400">
         با ما تماس بگیرید
       </Link>
       <Link href="/sentMe" className="hover:text-indigo-400">
