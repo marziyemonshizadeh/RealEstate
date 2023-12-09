@@ -1,6 +1,14 @@
 import Link from "next/link";
 
-export default function Estate({ id, img, title, roomCount, meterage, price }) {
+export default function Estate({
+  id,
+  img,
+  title,
+  roomCount,
+  meterage,
+  price,
+  address,
+}) {
   return (
     <div className="max-w-[25rem] max-h-[40rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <Link href="#">
@@ -13,7 +21,7 @@ export default function Estate({ id, img, title, roomCount, meterage, price }) {
           </h5>
         </Link>
         <div className="font-normal grid grid-cols-2 gap-2 mb-5">
-          <p>مالدیو</p>
+          <p>{address}</p>
           <p>{roomCount} اتاق</p>
           <p>{meterage} متر مربع</p>
           <p>{price.toLocaleString()} میلیون تومان</p>
