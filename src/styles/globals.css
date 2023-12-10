@@ -17,16 +17,15 @@
 }
 @layer utilities{
   .btn{
-    @apply rounded-none bg-indigo-950 text-white px-2 my-2 hover:bg-indigo-900
+    @apply rounded-none bg-indigo-950 text-white px-2  hover:bg-indigo-900
+}
+  .paginationBtn{
+    @apply rounded-full bg-violet-950 text-slate-50 w-10 text-center h-10 p-2 hover:bg-indigo-900
+}
+  .title{
+   @apply font-bold  text-slate-500
+}
+  .header{
+   @apply text-center font-extrabold text-2xl p-2
 }
 }
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
