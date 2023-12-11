@@ -1,5 +1,5 @@
 import Title from "@/components/modules/title/Title";
-import Features from "@/components/templates/features/features/Features";
+import Features from "@/components/templates/features/Features";
 
 export default function features({ data }) {
   return (

@@ -1,32 +1,23 @@
 import Estate from "@/components/modules/estate/estate";
-import Link from "next/link";
+import PaginationButton from "@/components/templates/home/index/PaginationButton";
+import EstateNotFound from "@/components/templates/home/index/estateNotFound";
+import SearchBox from "@/components/templates/home/index/searchBox";
 import { useEffect, useState } from "react";
 
-function home() {
-  //all estates
-  const [estate, setEstate] = useState([]);
+function home({ data }) {
   // copy estates
-  const [homes, setHomes] = useState([]);
+  const [homes, setHomes] = useState(data.estatesData);
 
   const [sort, setSort] = useState("-1");
   const [activePage, setActivePage] = useState(1);
-  //نیاز به مقدار پیش فرض دارد const [homes, setHomes] = useState([]);
   const [search, setSearch] = useState("");
   const pageItem = 3;
 
-  //  fetching data
-  useEffect(() => {
-    fetch("http://localhost:4001/Estates")
-      .then((res) => res.json())
-      .then((estate) => {
-        setEstate(estate);
-        setHomes(estate);
-      });
-    setHomes[estate];
-  }, []);
   // search data
   useEffect(() => {
-    const newHomes = estate.filter((home) => home.title.includes(search));
+    const newHomes = data.estatesData.filter((home) =>
+      home.title.includes(search)
+    );
     setHomes(newHomes);
   }, [search]);
 
@@ -56,81 +47,55 @@ function home() {
 
   const paginateHandler = (event, page) => {
     event.preventDefault();
-    console.log("Next Page =>", page);
     setActivePage(page);
     // paginated
     const endIndex = pageItem * page;
     const startIndex = endIndex - pageItem;
 
-    const paginatedHomes = estate.slice(startIndex, endIndex);
+    const paginatedHomes = data.estatesData.slice(startIndex, endIndex);
     setHomes(paginatedHomes);
   };
-  console.log("activepage", activePage);
   return (
     <>
-      {/* {console.log("search", search)}
-      {console.log("estate", estate)}
-      {console.log("homes", homes)} */}
-      {/* {console.log("homes", homes)} */}
-      <div className="flex justify-center">
-        <select
-          name=""
-          id=""
-          className="focus:outline-blue-800 border shadow m-4"
-          defaultValue={sort}
-          onChange={(e) => setSort(e.target.value)}
-        >
-          <option value="-1">انتخاب کنید</option>
-          <option value="price">بر اساس قیمت</option>
-          <option value="room">بر اساس تعداد اتاق</option>
-          <option value="meterage">بر اساس اندازه</option>
-        </select>
-        <div className="flex justify-center m-4">
-          <input
-            className="shadow appearance-none border rounded-s w-full py-2 px-3 text-gray-700 leading-tight max-w-md focus:outline-blue-800 focus:shadow-outline"
-            id="username"
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="عنوان خانه مورد نظر را وارد کنید"
-          />
-        </div>
-      </div>
-      {estate.length > 0 ? (
+      <SearchBox
+        sort={sort}
+        setSort={setSort}
+        search={search}
+        setSearch={setSearch}
+      />
+      {data.estatesData.length > 0 && homes.length > 0 ? (
         <>
           {/* املاک */}
-          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 place-items-center gap-y-8 my-16">
+          <section className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 place-items-center gap-y-8 my-16">
             {homes.slice(0, pageItem).map((estate) => {
               return <Estate key={estate.id} {...estate} />;
             })}
-          </div>
+          </section>
           {/* pagination */}
-          <ul className="flex flex-row-reverse justify-center gap-x-3 my-6">
-            {Array.from({ length: Math.ceil(estate.length / pageItem) }).map(
-              (item, index) => (
-                <Link
-                  href="#"
-                  key={index + 1}
-                  className={`rounded-full bg-violet-950 text-slate-50 w-10 text-center h-10 p-2 hover:bg-indigo-900 ${
-                    activePage == index + 1 ? " bg-slate-300" : ""
-                  }`}
-                  onClick={(event) => paginateHandler(event, index + 1)}
-                >
-                  <div className="">{index + 1}</div>
-                </Link>
-              )
-            )}
-          </ul>
+          <PaginationButton
+            estate={data.estatesData}
+            pageItem={pageItem}
+            activePage={activePage}
+            paginateHandler={paginateHandler}
+          />
         </>
       ) : (
-        <div className="flex justify-center mx-auto h-screen my-14">
-          <p className="text-slate-50 h-14 bg-indigo-950 p-4">
-            خانه ی مورد نظر یافت نشد!!!
-          </p>
-        </div>
+        <EstateNotFound />
       )}
     </>
   );
 }
+export async function getStaticProps() {
+  const estatesResponse = await fetch("http://localhost:4001/Estates/");
+  const estatesData = await estatesResponse.json();
 
+  return {
+    props: {
+      data: {
+        estatesData,
+      },
+    },
+    revalidate: 60 * 60 * 12,
+  };
+}
 export default home;
