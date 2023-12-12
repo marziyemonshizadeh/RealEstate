@@ -13,6 +13,14 @@ This is my first next js project
 ![](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
 ![](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)
+## Packages Used
+
+- react-toastify
+- swiper
+- json-server
+- react-dom
+- react-hook-form
+- axios
 
 
 ## Features
@@ -27,10 +35,17 @@ You can :
 - visit connect me page
 - visit about us page
 - visit gallery
-- visit gallery
 
 ## Screenshots
-
+![](./src/assets/screenShots/1.png)
+![](./src/assets/screenShots/2.png)
+![](./src/assets/screenShots/3.png)
+![](./src/assets/screenShots/4.png)
+![](./src/assets/screenShots/5.png)
+![](./src/assets/screenShots/6.png)
+![](./src/assets/screenShots/7.png)
+![](./src/assets/screenShots/8.png)
+![](./src/assets/screenShots/9.png)
 ## Project Status
 
 Project is: _InProcess
